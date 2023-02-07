@@ -1,12 +1,12 @@
 module github.com/CosmWasm/wasmd
 
-go 1.19
+go 1.18
 
 require (
 	github.com/CosmWasm/wasmvm v1.2.0
 	github.com/cosmos/cosmos-proto v1.0.0-beta.1
-	github.com/cosmos/cosmos-sdk v0.45.12
-	github.com/cosmos/gogoproto v1.4.3
+  github.com/cosmos/cosmos-sdk v0.47.0-rc1
+  github.com/cosmos/gogoproto v1.4.3
 	github.com/cosmos/iavl v0.19.4
 	github.com/cosmos/ibc-go/v4 v4.3.0
 	github.com/cosmos/interchain-accounts v0.2.6

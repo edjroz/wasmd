@@ -3,10 +3,13 @@ module github.com/CosmWasm/wasmd
 go 1.18
 
 require (
+	cosmossdk.io/x/feegrant v0.0.0-20230207111136-d39c5f334b6f
+	cosmossdk.io/x/nft v0.0.0-20230207111136-d39c5f334b6f
+
 	github.com/CosmWasm/wasmvm v1.2.0
 	github.com/cosmos/cosmos-proto v1.0.0-beta.1
-  github.com/cosmos/cosmos-sdk v0.47.0-rc1
-  github.com/cosmos/gogoproto v1.4.3
+	github.com/cosmos/cosmos-sdk v0.47.0-rc1
+	github.com/cosmos/gogoproto v1.4.3
 	github.com/cosmos/iavl v0.19.4
 	github.com/cosmos/ibc-go/v4 v4.3.0
 	github.com/cosmos/interchain-accounts v0.2.6
@@ -129,6 +132,8 @@ require (
 )
 
 replace (
+
+	cosmossdk.io/x/evidence v0.1.0 => cosmossdk.io/x/evidence v0.0.0-20230207111136-d39c5f334b6f
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0

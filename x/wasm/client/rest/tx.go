@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
+	rest"github.com/cosmos/cosmos-sdk/testutil"
 	"github.com/gorilla/mux"
 
 	"github.com/CosmWasm/wasmd/x/wasm/ioutils"

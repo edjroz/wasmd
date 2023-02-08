@@ -147,5 +147,5 @@ replace (
 	// See https://twitter.com/informalinc/status/1613580954383040512
 	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.34.24
 
-	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+//google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )

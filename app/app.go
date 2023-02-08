@@ -115,7 +115,8 @@ import (
 
 	wasmappparams "github.com/CosmWasm/wasmd/app/params"
 	"github.com/CosmWasm/wasmd/x/wasm"
-	wasmclient "github.com/CosmWasm/wasmd/x/wasm/client"
+
+	//wasmclient "github.com/CosmWasm/wasmd/x/wasm/client"
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
 
 	// unnamed import of statik for swagger UI support
@@ -190,7 +191,7 @@ var (
 		distr.AppModuleBasic{},
 		gov.NewAppModuleBasic(
 			append(
-				wasmclient.ProposalHandlers, //nolint:staticcheck
+				//wasmclient.ProposalHandlers, //nolint:staticcheck
 				paramsclient.ProposalHandler,
 				//distrclient.ProposalHandler,
 				upgradeclient.ProposalHandler,

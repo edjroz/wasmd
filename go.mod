@@ -10,8 +10,8 @@ require (
 	github.com/cosmos/cosmos-sdk v0.47.0-rc2
 	github.com/cosmos/gogoproto v1.4.4
 	github.com/cosmos/iavl v0.20.0-alpha3
-	github.com/cosmos/ibc-go/v4 v4.3.0
-	github.com/cosmos/interchain-accounts v0.2.6
+	github.com/cosmos/ibc-go/v7 v7.0.0-beta2
+	github.com/cosmos/interchain-accounts v0.4.1-0.20230129194959-49ab09ed3227
 	github.com/docker/distribution v2.8.1+incompatible
 	github.com/dvsekhvalnov/jose2go v1.5.0
 	github.com/gogo/protobuf v1.3.3
@@ -48,7 +48,7 @@ require (
 	github.com/btcsuite/btcd v0.22.2 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
-	github.com/coinbase/rosetta-sdk-go v0.7.0 // indirect
+	github.com/coinbase/rosetta-sdk-go v0.7.9 // indirect
 	github.com/cometbft/cometbft v0.0.0-20230203130311-387422ac220d // indirect
 	github.com/confio/ics23/go v0.9.0 // indirect
 	github.com/cosmos/btcutil v1.0.5 // indirect
@@ -135,6 +135,10 @@ require (
 replace (
 	cosmossdk.io/simapp => cosmossdk.io/simapp v0.0.0-20230207163452-bd8e9f2d1206
 	cosmossdk.io/x/evidence v0.1.0 => cosmossdk.io/x/evidence v0.0.0-20230207111136-d39c5f334b6f
+	github.com/cosmos/cosmos-sdk/x/staking/teststaking v0.46.9 => github.com/cosmos/cosmos-sdk/x/staking/testutil v0.47.0-rc2
+
+	//github.com/cosmos/interchain-accounts v0.2.6 => github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx
+
 	// Fix upstream GHSA-h395-qcrw-5vmq vulnerability.
 	// TODO Remove it: https://github.com/cosmos/cosmos-sdk/issues/10409
 	github.com/gin-gonic/gin => github.com/gin-gonic/gin v1.7.0
@@ -146,6 +150,5 @@ replace (
 	// use informal system fork of tendermint
 	// See https://twitter.com/informalinc/status/1613580954383040512
 	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.34.24
-
 //google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )

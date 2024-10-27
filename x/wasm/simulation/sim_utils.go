@@ -1,7 +1,7 @@
 package simulation
 
 import (
-	"github.com/cosmos/cosmos-sdk/simapp/helpers"
+	helpers "github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
